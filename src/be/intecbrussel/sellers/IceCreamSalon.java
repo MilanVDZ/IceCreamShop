@@ -14,7 +14,10 @@ public class IceCreamSalon implements IceCreamSeller{
 
     @Override
     public Cone orderCone(Cone.Flavor[] balls) {
-        this.totalProfit += (balls != null && balls.length > 0) ? (this.priceList.getBallPrice() * balls.length) : this.priceList.getBallPrice();
+        this.totalProfit += (balls != null && balls.length > 0) 
+                ? (this.priceList.getBallPrice() * balls.length) 
+                : this.priceList.getBallPrice();
+
         return new Cone(balls);
     }
 

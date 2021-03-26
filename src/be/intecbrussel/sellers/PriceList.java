@@ -34,9 +34,17 @@ public class PriceList {
     }
 
     public double getMagnumPrice(Magnum.MagnumType magnumType) {
+
+        // TODO:
+        // if(magnumType == Magnum.MagnumType.ALPINENUTS){
+
+        // }
+
         if(magnumType.equals(Magnum.MagnumType.ALPINENUTS)){
             return this.magnumStandardPrice * 1.5;
-        }else return this.magnumStandardPrice;
+        }
+        
+        return this.magnumStandardPrice;
     }
 
     public void setMagnumStandardPrice(double magnumStandardPrice) {

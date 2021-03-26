@@ -18,7 +18,8 @@ public class Cone implements Eatable {
     private Flavor[] balls;
 
     public Cone(){
-
+        // TODO: chef
+        this.balls = new Flavor[100];
     }
 
     public Cone(Flavor[] balls){
@@ -27,6 +28,7 @@ public class Cone implements Eatable {
 
     //EXTRA: Lowercase en laatste komma vervangen met een "en"
     private String cleanString(){
+        // TODO: string -> prettyText
         String string = "I'm eating an ice cream with ";
         for(int i = 0; i < this.balls.length; i++){
             if(i == this.balls.length - 2){
@@ -36,6 +38,10 @@ public class Cone implements Eatable {
             }else string += this.balls[i].toString().toLowerCase() + ", ";
         }
         string += " tastes.";
+
+        // TODO: chef
+        // String.join() 
+
         return string;
     }
 

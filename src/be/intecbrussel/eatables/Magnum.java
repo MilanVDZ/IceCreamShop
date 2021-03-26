@@ -21,7 +21,7 @@ public class Magnum implements Eatable {
     }
 
     public MagnumType getType(){
-        return type;
+        return this.type;
     }
 
     @Override
