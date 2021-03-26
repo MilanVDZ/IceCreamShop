@@ -21,7 +21,7 @@ public class IceCreamApp {
         for(int i = 0; i < eatables.length; i++){
             eatables[i].eat();
         }
-        
+        //test
         System.out.println();
         System.out.println("The profit you've made is " + iceCreamSalon.getProfit());
     }
